@@ -1,0 +1,12 @@
+{% extends 'index.html'%}
+{% load static%}
+{% block body%}
+<div class="container">
+<h1>welcome account</h1>
+
+<h3>@{{profile.user}}</h3>
+<p>Name : {{profile.first_name}} {{profile.last_name}}</p>
+<p>Bio : {{profile.bio}}</p>
+
+<a href="{% url 'edit-account'%}"><h2>edit</h2></a></div>
+{% endblock%}

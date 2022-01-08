@@ -1,0 +1,14 @@
+{% extends 'index.html'%}
+{% load static%}
+{% block body%}
+<div class="container">
+<h1>welcome home</h1>
+{% for profile in profiles%}
+<div class="col">
+<h4>{{profile.user}}</h4>
+<p>{{profile.first_name}} {{profile.last_name}}</p>
+<p>{{profile.bio}}</p>
+{% endfor%}
+</div>
+</div>
+{% endblock body%}

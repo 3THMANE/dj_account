@@ -1,0 +1,39 @@
+
+{% extends 'index.html'%}
+{% load static%}
+{% block title%} login / register{% endblock title%}
+{% block body%}
+{% if page == 'login'%}
+<div class="container">
+<h1>welcome login page</h1>
+<div class="login">
+<form method='post' class="main-form">
+    {% csrf_token%}
+<label for="username"> Username : </label>
+<input class=" input" type="text" name="username">
+<label for="password">Password : </label>
+<input class=" input" type="password" name="password">
+<button class="btn" type="submit">login</button>
+<p>i dont have account 
+<a href="{% url 'register'%}"> Register ? </a></p>
+</form>
+</div>
+</div>
+{% else %}
+<div class="container">
+<h1>welcome register page</h1>
+<div class="login">
+
+<form method="post" class="main-form">
+    {% csrf_token%}
+    {% for form in form %}
+    <label for="">{{form.label}}</label>
+    {{form}}
+    {%endfor%}
+    <button class="btn" type="submit">register</button>
+    <p>already have account 
+<a href="{% url 'login'%}"> Login ?</a></p>
+    
+</form>
+</div> </div>
+{% endif%}{% endblock body%}

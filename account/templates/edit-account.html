@@ -1,0 +1,18 @@
+{% extends 'index.html'%}
+{% load static%}
+{% block body%}
+<div class="container">
+<h1>welcome update account</h1>
+
+
+<div class="login">
+<form action="" method="post" class="main-form">
+    {% csrf_token%}
+    {% for form in form%}
+    <label for="">{{form.label}}</label>
+    {{form}}
+    {%endfor%}
+    <button class="btn" type="submit">update</button>
+</form></div></div>
+
+{% endblock%}

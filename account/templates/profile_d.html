@@ -1,0 +1,14 @@
+
+{% extends 'index.html'%}
+{% load static%}
+{% block body%}
+<div class="container">
+    <h1>welcome teacher detail page</h1>
+
+    <h4>@{{profile.user}}</h4>
+    <p>Name : {{profile.first_name}} {{profile.last_name}}</p>
+    <p>Bio : {{profile.bio}}</p>
+
+
+</div>
+{% endblock body%}

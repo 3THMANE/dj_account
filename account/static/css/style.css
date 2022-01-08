@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.header {
+    /* display: block; */
+    width: 80%;
+    margin: 0 auto;
+    line-height: 80px;
+}
+a{
+    text-decoration: none;
+}
+.header a{
+    margin: 10px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.container h1{
+text-align: center;
+margin: 20px;
+}
+.content {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 20px;
+}
+.content .col {
+    border: 2px solid gray;
+    padding: 20px;
+}
+form.main-form {
+    display: grid;
+    width: 40%;
+}
+.login {
+    display: flex;
+    justify-content: center;
+}
+input.input {
+    height: 8vh;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+button.btn {
+    margin: 10px 0;
+    height: 6vh;
+    width: 88px;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+/* .container h1{
+    text-ali
+} */
